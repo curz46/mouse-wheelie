@@ -116,7 +116,7 @@ public class SlotRefiller {
 		}
 		if (MWConfig.refill.ignoreBuckets) {
 			for (Item bt : BUCKET_TYPES)
-				if (stack.getItem() == bt) 
+				if (bt.equals(stack.getItem())) 
 					return false;
 		}
 		refill(hand);
