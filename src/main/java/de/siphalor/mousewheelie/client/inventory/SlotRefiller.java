@@ -55,6 +55,16 @@ public class SlotRefiller {
 		endRefill();
 		return InteractionManager.DUMMY_WAITER;
 	};
+	private static final Item[] BUCKET_TYPES = new Item[] {
+		Items.BUCKET,
+		Items.COD_BUCKET,
+		Items.LAVA_BUCKET,
+		Items.MILK_BUCKET,
+		Items.PUFFERFISH_BUCKET,
+		Items.SALMON_BUCKET,
+		Items.TROPICAL_FISH_BUCKET,
+		Items.WATER_BUCKET
+	};
 
 	private static PlayerInventory playerInventory;
 	private static ItemStack stack;
@@ -103,6 +113,11 @@ public class SlotRefiller {
 		refillHand = null;
 		if (hand == Hand.OFF_HAND && !MWConfig.refill.offHand) {
 			return false;
+		}
+		if (MWConfig.refill.ignoreBuckets) {
+			for (Item bt : BUCKET_TYPES)
+				if (stack.getItem() == bt) 
+					return false;
 		}
 		refill(hand);
 
