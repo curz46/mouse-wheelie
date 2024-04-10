@@ -117,6 +117,8 @@ public class MWConfig {
 		public boolean use = true;
 		public boolean other = true;
 
+		public boolean ignoreBuckets = false;
+
 		public Rules rules = new Rules();
 
 		@AConfigBackground("textures/block/yellow_terracotta.png")
