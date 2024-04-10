@@ -88,6 +88,8 @@
     "tweed4_tailor_screen.screen.mousewheelie.refill.use.description": "Refill when using up items, like tools or weapons.",
     "tweed4_tailor_screen.screen.mousewheelie.refill.other": "Refill on other occasions",
     "tweed4_tailor_screen.screen.mousewheelie.refill.other.description": "Refill on other occasions.",
+    "tweed4_tailor_screen.screen.mousewheelie.refill.ignoreBuckets": "Do not refill buckets",
+    "tweed4_tailor_screen.screen.mousewheelie.refill.ignoreBuckets.description": "Restore sanity to the world. Your buckets will not be refilled.",
     "tweed4_tailor_screen.screen.mousewheelie.refill.rules": "Refill rules",
     "tweed4_tailor_screen.screen.mousewheelie.refill.rules.description": "Configure with which new item the previous stack will be refilled.",
     "tweed4_tailor_screen.screen.mousewheelie.refill.rules.any-block": "Refill with any blocks",
